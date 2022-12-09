@@ -1,5 +1,5 @@
 {
-  "clients" : [
+  "clients": [
     {
       "id": 1,
       "name": "Juan",
@@ -34,6 +34,22 @@
       "phone": 1398198938,
       "email": "pedro@juan.com",
       "company": "Codigo Con Juan"
+    },
+    {
+      "name": "Arden Richards",
+      "company": "Cantu Pickett Inc",
+      "email": "wyhagabub@mailinator.com",
+      "phone": "+1 (111) 531-9247",
+      "notes": "Sint molestiae id i",
+      "id": 6
+    },
+    {
+      "name": "Justin Dunn",
+      "company": "Peters Simon LLC",
+      "email": "qahewog@mailinator.com",
+      "phone": "+1 (498) 571-3049",
+      "notes": "Aut tempore sunt of",
+      "id": 7
     }
   ]
 }

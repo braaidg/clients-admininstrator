@@ -1,11 +1,10 @@
-import { useNavigate, Form, useActionData } from "react-router-dom";
+import { useNavigate, Form, useActionData, redirect } from "react-router-dom";
 import ClientForm from "../components/ClientForm";
 import Error from "../components/Error";
+import { addClient } from "../data/Clients";
 
 export async function action({ request }) {
   const formData = await request.formData();
-  console.log([...formData]);
-  console.log(Object.fromEntries(formData));
   const data = Object.fromEntries(formData);
 
   const email = formData.get("email");
@@ -20,7 +19,7 @@ export async function action({ request }) {
     "([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|[[\t -Z^-~]*])"
   );
 
-  if (emailRegex.test(email)) {
+  if (!emailRegex.test(email)) {
     errors.push("Email isn't valid");
   }
 
@@ -28,14 +27,15 @@ export async function action({ request }) {
     return errors;
   }
 
-  return errors;
+  await addClient(data);
+
+  return redirect("/");
 }
 
 const NewClient = ({ client }) => {
   const navigate = useNavigate();
   const errors = useActionData();
 
-  console.log(errors);
   return (
     <>
       <h1 className="font-black text-4xl text-blue-400">New Client</h1>
