@@ -34,7 +34,7 @@ const ClientForm = () => {
           id="email"
           type="email"
           className="mt-2 block w-full p-3 bg-gray-50"
-          placeholder="Email del Cliente"
+          placeholder="Client email"
           name="email"
         />
       </div>
