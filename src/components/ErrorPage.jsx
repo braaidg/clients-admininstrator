@@ -9,7 +9,7 @@ const ErrorPage = () => {
         CRM- CLIENTS
       </h1>
       <p className="text-center">Error</p>
-      <p className="text-center">{error.message}</p>
+      <p className="text-center">{error.statusText || error.message}</p>
     </div>
   );
 };
