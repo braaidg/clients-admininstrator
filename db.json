@@ -1,42 +1,6 @@
 {
   "clients": [
     {
-      "name": "Juana",
-      "company": "Awesome company",
-      "email": "juan@juan.com",
-      "phone": "102013313",
-      "notes": "New note",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Karen",
-      "phone": 138198313,
-      "email": "karen@juan.com",
-      "company": "Awesome company"
-    },
-    {
-      "id": 3,
-      "name": "Josue",
-      "phone": 31983913,
-      "email": "josue@juan.com",
-      "company": "Awesome company"
-    },
-    {
-      "id": 4,
-      "name": "Miguel",
-      "phone": 319381983,
-      "email": "miguel@juan.com",
-      "company": "Awesome company"
-    },
-    {
-      "id": 5,
-      "name": "Pedro",
-      "phone": 1398198938,
-      "email": "pedro@juan.com",
-      "company": "Awesome company"
-    },
-    {
       "name": "Arden Richards",
       "company": "Cantu Pickett Inc",
       "email": "wyhagabub@mailinator.com",
@@ -51,6 +15,30 @@
       "phone": "+1 (498) 571-3049",
       "notes": "Aut tempore sunt of",
       "id": 7
+    },
+    {
+      "name": "Tatiana Travis",
+      "company": "Mooney and England Inc",
+      "email": "dasudawu@mailinator.com",
+      "phone": "+1 (857) 263-9304",
+      "notes": "Quas deserunt incidi",
+      "id": 8
+    },
+    {
+      "name": "Peter Larson",
+      "company": "Kirkland and Crosby Associates",
+      "email": "bani@mailinator.com",
+      "phone": "+1 (358) 711-6931",
+      "notes": "Voluptas qui molesti",
+      "id": 9
+    },
+    {
+      "name": "Naida Mitchell",
+      "company": "Vinson Mendez Co",
+      "email": "jupufywoso@mailinator.com",
+      "phone": "+1 (258) 556-7381",
+      "notes": "Aspernatur nobis und",
+      "id": 10
     }
   ]
 }
